@@ -1,0 +1,10 @@
+
+Format for both training and testing proteins:
+
+Composition:
+
+  value1 value2 ...... value20 protein_length protein_name
+
+All others:
+
+  value1 value2 ...... value21 protein_length protein_name

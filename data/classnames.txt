@@ -1,0 +1,128 @@
+  1 Alpha; Globin-like
+  2 Alpha; Long alpha-hairpin
+  3 Alpha; Cytochrome c
+  4 DNA-binding 3-helical bundle
+  5 Alpha; Peripheral subunit-binding domain of 2-oxo
+  6 Alpha; Pheromone proteins
+  7 Alpha; Four-helical up-and-down bundle
+  8 Alpha; Ferritin like
+  9 Alpha; 4-helical cytokines
+ 10 Alpha; lambda repressor-like DNA-binding domains
+ 11 Alpha; EF-hand
+ 12 Alpha; Met repressor-like
+ 13 Alpha; Glutathione S-transferases, C-terminal domain
+ 14 Alpha; Bifunctional inhibitor/lipid-transfer protein/
+ 15 Alpha; Thermolysin-like metalloproteases
+ 16 Alpha; Heme-dependent peroxidases
+ 17 Alpha; Cytochrome P450
+ 18 Alpha; Phospholipase A2
+ 19 Alpha; Oligomers of long helices
+ 20 Beta; Immunoglobulin-like beta-sandwich
+ 21 Beta; Common fold of diphtheria toxin/transcription factors/cytochrome f
+ 22 Beta; Prealbumin-like
+ 23 Beta; Cupredoxins
+ 24 Beta; Barrel-sandwich hybrid
+ 25 Beta; alpha-Amylases, beta-sheet domain
+ 26 Beta; Viral coat and capsid proteins
+ 27 Beta; Crystallins/protein S
+ 28 Beta; Colipase binding domain-like
+ 29 Beta; Galactose oxidase non-catalityc domain-like
+ 30 Beta; ConA-like lectins/glucanases
+ 31 Beta; SH3-like barrel
+ 32 Beta; OB-fold
+ 33 Beta; beta-Trefoil
+ 34 Beta; Reductase/elongation factor common domain
+ 35 Beta; Trypsin-like serine proteases
+ 36 Beta; Acid proteases
+ 37 Beta; Barwin-like endoglucanases
+ 38 Beta; Pleckstrin-homology (PH)-domain
+ 39 Beta; Lipocalins
+ 40 Beta; Avidin/streptavidin
+ 41 Beta; Cyclophilin
+ 42 Beta; beta-Propellers
+ 43 Beta; Alcohol dehydrogenase-like, N-ter
+ 44 Beta; beta-Prism
+ 45 Beta; Single (parallel) beta-helix
+ 46 A/B; beta/alpha (TIM)-barrel
+ 47 A/B; FAD (also NAD)-binding motif
+ 48 A/B; Flavodoxin-like
+ 49 A/B; Ferredoxin reductase-like, C-terminal NADP-
+ 50 A/B; Class I aminoacyl-tRNA synthetases (RS)
+ 51 A/B; NAD(P)-binding Rossmann-fold domains
+ 52 A/B; Pyruvate oxidase and decarboxylase, middle domain
+ 53 A/B; Thiamin-binding
+ 54 A/B; P-loop containing nucleotide triphosphate hydrolases
+ 55 A/B; CoA-dependent acetyltransferases
+ 56 A/B; Protein tyrosine phosphatases
+ 57 A/B; Thioredoxin-like
+ 58 A/B; Restriction endonucleases
+ 59 A/B; Ribonuclease H-like motif
+ 60 A/B; Phosphoglycerate mutase-like
+ 61 A/B; PLP-dependent transferases
+ 62 A/B; alpha/beta-Hydrolases
+ 63 A/B; Zn-dependent exopeptidases
+ 64 A/B; Dihydrofolate reductases
+ 65 A/B; Isocitrate & isopropylmalate dehydrogenases
+ 66 A/B; Aspartate carbamoyltransferase, Catalytic-chain
+ 67 A/B; Nitrogenase iron-molybdenum protein, alpha and beta chains
+ 68 A/B; beta-Glucosyltransferase & glycogen phosphorylase
+ 69 A/B; Periplasmic binding protein-like
+ 70 A/B; Thiolase
+ 71 A+B; Microbal ribonucleases
+ 72 A+B; beta-Grasp
+ 73 A+B; Ribonuclease A-like
+ 74 A+B; FAD-linked reductases, C-terminal domain
+ 75 A+B; CI-2 family of serine protease inhibitors
+ 76 A+B; Cystatin/monellin
+ 77 A+B; Interleukin 8-like chemokines
+ 78 A+B; Glutathione synthetase ATP-binding domain-like
+ 79 A+B; Histidine decarboxylase
+ 80 A+B; MHC antigen-recognition domain
+ 81 A+B; dsRBD & PDA domains
+ 82 A+B; Ribosomal protein S5 domain 2-like
+ 83 A+B; FKBP-like
+ 84 A+B; FAD/NAD-linked reductases, dimerisation
+ 85 A+B; N-terminal domain of enolase &
+ 86 A+B; Metzincins, catalytic (N-terminal) domain
+ 87 A+B; Ferredoxin-like
+ 88 A+B; Creatinase/methionine aminopeptidase
+ 89 A+B; Lactate & malate dehydrogenases
+ 90 A+B; Ribosome inactivating proteins (RIP)
+ 91 A+B; ADP-ribosylation toxins
+ 92 A+B; C-type lectin
+ 93 A+B; SH2-like
+ 94 A+B; Histidine-containing phosphocarrier proteins (HPr)
+ 95 A+B; DNA clamp
+ 96 A+B; Class II aaRS and biotin synthetases
+ 97 A+B; Gelsolin-like (actin-severing protein)
+ 98 A+B; Profilin-like
+ 99 Multi; Protein kinases (PK), catalytic core
+100 Multi; Cysteine proteases
+101 Multi; beta-Lactamase/D-ala carboxypeptidase
+102 Multi; Lysozyme-like
+103 Multi; Sugar phosphatases
+104 Multi; DNA/RNA polymerases
+105 Multi; Serpins
+106 Membrane; Toxins' membrane translocation domains
+107 Membrane; Membrane all-beta folds
+108 Membrane; Membrane all-alpha
+109 Small; Small inhibitors, toxins, lectins
+110 Small; Small inhibitors, toxins, lectins
+111 Small; Snake toxin-like
+112 Small; BPTI-like
+113 Small; Defensin-like
+114 Small; EGF-like module
+115 Small; Kringle modules
+116 Small; Ovomucoid/PCI-1 like inhibitors
+117 Small; Trefoil
+118 Small; Cystin-knot cytokines
+119 Small; Thrombin inhibitors
+120 Small; Cytochrome c3
+121 Small; HIPIP (high potential iron protein)
+122 Small; Classic zinc finger
+123 Small; Classic zinc finger
+124 Small; Glucocorticoid receptor-like (DNA-binding domain)
+125 Small; Rubredoxin-like
+126 Small; Metallothionein
+127 Small; Capsid
+128 Peptides; Polymorphic antigen SPAM-H1 (residues 90-127)
