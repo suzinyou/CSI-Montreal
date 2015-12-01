@@ -15,6 +15,8 @@ from collections import Counter
 from datetime import datetime
 from time import time
 import cPickle
+
+from feature_set import get_all_feature_sets
 #import BatchReader
 
 # Some global vars for cross validation and number of parallel jobs to run
@@ -25,20 +27,30 @@ filenames = ['aa_comp', 'hydrophobicity', 'polarity', 'polarizability', 'predict
 
 train_scores = []
 test_scores = []
-for filename in filenames:
 
-    print("Loading %s and associated labels..." % filename)
+setts = get_all_feature_sets()
 
-    train = np.genfromtxt("../data/training/"+filename+"_training.csv", delimiter=",")
-    testLabels = np.load("../data/testing_labels.npy")
-    train = train[ np.in1d(train[:,-1],testLabels), :]     # get only the examples with labels appearing in test set
-    #np.random.shuffle(data)
-    examples = train[:,:-2]
-    labels = train[:,-1]
+for key in setts:
 
-    test = np.genfromtxt("../data/testing/"+filename+"_testing.csv", delimiter=",")
-    test_examples = test[:,:-2]
-    test_labels = test[:,-1]
+    # print("Loading %s and associated labels..." % filename)
+
+    # train = np.genfromtxt("../data/training/"+filename+"_training.csv", delimiter=",")
+    # testLabels = np.load("../data/testing_labels.npy")
+    # train = train[ np.in1d(train[:,-1],testLabels), :]     # get only the examples with labels appearing in test set
+    # #np.random.shuffle(data)
+    # examples = train[:,:-2]
+    # labels = train[:,-1]
+
+    # test = np.genfromtxt("../data/testing/"+filename+"_testing.csv", delimiter=",")
+    # test_examples = test[:,:-2]
+    # test_labels = test[:,-1]
+
+    examples = setts[key]['train_X']
+    labels = setts[key]['train_Y']
+    test_examples = setts[key]['test_X']
+    test_labels = setts[key]['test_Y']
+
+    print "Using the feature set of "+key
 
 
     n_examples, n_features = examples.shape

@@ -5,6 +5,7 @@ import os
 train_files = ['../data/training/aa_comp_training.csv','../data/training/hydrophobicity_training.csv', '../data/training/polarity_training.csv', '../data/training/polarizability_training.csv', '../data/training/predicted_sec_struct_training.csv', '../data/training/vdw_volume_training.csv']
 test_files = ['../data/testing/aa_comp_testing.csv','../data/testing/hydrophobicity_testing.csv', '../data/testing/polarity_testing.csv', '../data/testing/polarizability_testing.csv', '../data/testing/predicted_sec_struct_testing.csv', '../data/testing/vdw_volume_testing.csv']
 names = ['aa_comp', 'hydrophobicity', 'polarity', 'polarizability', 'predicted_sec_struct', 'vdw_volume']
+testLabels = np.load("../data/testing_labels.npy")
 
 def file_to_feature(filename):
     X = []
@@ -12,8 +13,10 @@ def file_to_feature(filename):
     with open(filename, 'r') as f:
         reader = csv.reader(f)
         for row in reader:
-            X.append([float(i) for i in row[:-2]])
-            Y.append(int(row[-1]))
+            c = int(row[-1])
+            if c in testLabels:
+                X.append([float(i) for i in row[:-2]])
+                Y.append(c)
     return np.array(X), np.array(Y)
 
 def permute_names(names):
