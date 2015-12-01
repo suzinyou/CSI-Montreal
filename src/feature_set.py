@@ -1,0 +1,55 @@
+import csv
+import numpy as np 
+import os
+
+train_files = ['../data/training/aa_comp_training.csv','../data/training/hydrophobicity_training.csv', '../data/training/polarity_training.csv', '../data/training/polarizability_training.csv', '../data/training/predicted_sec_struct_training.csv', '../data/training/vdw_volume_training.csv']
+test_files = ['../data/testing/aa_comp_testing.csv','../data/testing/hydrophobicity_testing.csv', '../data/testing/polarity_testing.csv', '../data/testing/polarizability_testing.csv', '../data/testing/predicted_sec_struct_testing.csv', '../data/testing/vdw_volume_testing.csv']
+names = ['aa_comp', 'hydrophobicity', 'polarity', 'polarizability', 'predicted_sec_struct', 'vdw_volume']
+
+def file_to_feature(filename):
+    X = []
+    Y = []
+    with open(filename, 'r') as f:
+        reader = csv.reader(f)
+        for row in reader:
+            X.append([float(i) for i in row[:-2]])
+            Y.append(int(row[-1]))
+    return np.array(X), np.array(Y)
+
+def permute_names(names):
+    name = names[0]
+    if len(names) == 1:
+        return [name]
+    else:
+        perms= permute_names(names[1:])
+        tmpperms = []
+        for i in range(len(perms)):
+            tmpperms.append(name + " | " + perms[i])
+        perms += tmpperms
+        perms.append(name)
+        return perms
+
+def permute_sets(files):
+    X,_ = file_to_feature(files[0])
+    if len(files) == 1:
+        return [X]
+    else:
+        sets = permute_sets(files[1:])
+        tmpsets = []
+        for i in range(len(sets)):
+            tmpsets.append(np.hstack((X,sets[i])))
+        sets += tmpsets
+        sets.append(X)
+        return sets
+
+def get_all_feature_sets():
+    train = permute_sets(train_files)
+    test = permute_sets(test_files)
+    combos = permute_names(names)
+    _, train_Y = file_to_feature(train_files[0])
+    _, test_Y = file_to_feature(test_files[0])
+    d = {}
+    for i in range(len(combos)):
+        tmp = {'train_X': train[i], 'train_Y': train_Y, 'test_X':test[i], 'test_Y': test_Y}
+        d[combos[i]] = tmp
+    return d
