@@ -21,7 +21,7 @@ import cPickle
 kfolds = 5
 num_jobs = -1
 
-filename = 'polarizability'
+filename = 'aa_comp'
 
 print("Loading %s and associated labels..." % filename)
 
@@ -50,7 +50,7 @@ pipeline=Pipeline(steps=[
     # add transformer dictionary too
     ('poly', poly),
     ('norm', norm),
-    #('pca', pca),
+    ('pca', pca),
     #('logit', logit),
     #('nusvc', nusvc),
     ('svc', svc)
