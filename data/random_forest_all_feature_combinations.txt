@@ -1,0 +1,63 @@
+polarizability | predicted_sec_struct | vdw_volume, 0
+hydrophobicity | polarity | predicted_sec_struct | vdw_volume, 0
+aa_comp | hydrophobicity | vdw_volume, 0
+polarity | polarizability | predicted_sec_struct | vdw_volume, 0
+hydrophobicity | predicted_sec_struct | vdw_volume, 0
+aa_comp | predicted_sec_struct | vdw_volume, 0
+hydrophobicity | polarizability | predicted_sec_struct, 0
+aa_comp | polarizability | predicted_sec_struct, 0
+aa_comp | hydrophobicity | polarity | vdw_volume, 0
+aa_comp | hydrophobicity | polarity | predicted_sec_struct | vdw_volume, 0
+polarity | polarizability, 0
+aa_comp | polarity | polarizability | predicted_sec_struct | vdw_volume, 0
+predicted_sec_struct, 0
+hydrophobicity | vdw_volume, 0
+aa_comp | polarizability | predicted_sec_struct | vdw_volume, 0
+polarity, 0
+aa_comp | hydrophobicity | polarizability | vdw_volume, 0
+hydrophobicity | polarity | predicted_sec_struct, 0
+aa_comp | polarizability, 0
+polarity | polarizability | vdw_volume, 0
+hydrophobicity | polarity | polarizability, 0
+aa_comp | predicted_sec_struct, 0
+aa_comp | polarity | polarizability | predicted_sec_struct, 0
+aa_comp | polarity, 0
+aa_comp | hydrophobicity, 0
+polarity | predicted_sec_struct | vdw_volume, 0
+polarity | polarizability | predicted_sec_struct, 0
+aa_comp | polarity | polarizability, 0
+aa_comp | hydrophobicity | predicted_sec_struct | vdw_volume, 0
+hydrophobicity, 0
+aa_comp | vdw_volume, 0
+hydrophobicity | polarity | polarizability | predicted_sec_struct, 0
+polarizability | predicted_sec_struct, 0
+aa_comp | polarity | vdw_volume, 0
+aa_comp | polarity | predicted_sec_struct | vdw_volume, 0
+polarizability, 0
+aa_comp | hydrophobicity | polarity | polarizability | predicted_sec_struct | vdw_volume, 0
+aa_comp | hydrophobicity | polarity | polarizability | predicted_sec_struct, 0
+aa_comp | polarizability | vdw_volume, 0
+hydrophobicity | polarizability | vdw_volume, 0
+aa_comp | polarity | predicted_sec_struct, 0
+predicted_sec_struct | vdw_volume, 0
+hydrophobicity | predicted_sec_struct, 0
+hydrophobicity | polarity | polarizability | vdw_volume, 0
+aa_comp | hydrophobicity | polarizability | predicted_sec_struct, 0
+aa_comp, 0
+hydrophobicity | polarity | polarizability | predicted_sec_struct | vdw_volume, 0
+aa_comp | polarity | polarizability | vdw_volume, 0
+polarity | vdw_volume, 0
+aa_comp | hydrophobicity | polarity | predicted_sec_struct, 0
+polarizability | vdw_volume, 0
+aa_comp | hydrophobicity | polarizability | predicted_sec_struct | vdw_volume, 0
+hydrophobicity | polarity, 0
+aa_comp | hydrophobicity | polarizability, 0
+aa_comp | hydrophobicity | predicted_sec_struct, 0
+aa_comp | hydrophobicity | polarity | polarizability, 0
+hydrophobicity | polarizability, 0
+aa_comp | hydrophobicity | polarity | polarizability | vdw_volume, 0
+vdw_volume, 0
+hydrophobicity | polarizability | predicted_sec_struct | vdw_volume, 0
+hydrophobicity | polarity | vdw_volume, 0
+aa_comp | hydrophobicity | polarity, 0
+polarity | predicted_sec_struct, 0
