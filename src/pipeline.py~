@@ -50,7 +50,7 @@ for filename in filenames:
     poly = PolynomialFeatures()
     pca = PCA(n_components=n_features, whiten=True)
     logit = LogisticRegression(solver='newton-cg',multi_class='multinomial')
-    svc = SVC(kernel='sigmoid')
+    svc = SVC()
     nusvc = NuSVC(verbose=True) # might need to add decision_function_shape='ovr' 
 
 
@@ -110,12 +110,12 @@ for filename in filenames:
         test_scores.append(accuracy_score(test_labels, grid_search.predict(test_examples)))
 
       
-        for key in parameters:
-		filename = filename+"_"+key
+        # for key in parameters:
+        #     filename = filename+"_"+key
 
-        with open("../data/pickle/"+filename+"_"+pickle_time+".pkl", "w") as fp:
-		cPickle.dump(grid_search, fp)
-		print("Results are dumped as "+filename+"_"+pickle_time+".pkl")
+        # with open("../data/pickle/"+filename+"_"+pickle_time+".pkl", "w") as fp:
+        #     cPickle.dump(grid_search, fp)
+        #     print("Results are dumped as "+filename+"_"+pickle_time+".pkl")
         
 data = zip(filenames, train_scores, test_scores)
 print "Feature Set     CV SCORE      test SCORE"

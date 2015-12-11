@@ -17,6 +17,7 @@ from time import time
 import cPickle
 
 from feature_set import get_all_feature_sets
+#import BatchReader
 
 # Some global vars for cross validation and number of parallel jobs to run
 kfolds = 5
@@ -74,6 +75,7 @@ for key in setts:
         #('logit', logit),
         #('nusvc', nusvc),
         ('svc', svc)
+
     ])
 
     ### Parameters
