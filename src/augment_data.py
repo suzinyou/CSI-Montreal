@@ -16,8 +16,8 @@ for filename in names:
     for l in testLabels:
         subset = train[train[:,-1]==l]
         if subset.shape[0] < 12:
-            train = np.concatenate((train, np.concatenate((subset,subset))))
-        elif subset.shape[0] < 17:
+       #     train = np.concatenate((train, np.concatenate((subset,subset))))
+        #elif subset.shape[0] < 17:
             train = np.concatenate((train, subset))
 
     np.savetxt("../data/balanced_training/"+filename+".csv", train, delimiter=",")
